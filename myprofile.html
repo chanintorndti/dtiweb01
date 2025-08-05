@@ -12,18 +12,27 @@
     <meta name="author" content="NinniN DTI-SAU" />
     <title>Chaninton WebDev 2025</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <style>
+        h1{
+            color: #0000ff;
+        }
+        hr{
+            width: 75%;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div>
       <img src="./images/devlogo.png" alt="ชนินทร" />
     </div>
     <div>
-      <h1>ชนินทร เฉลิมสุข</h1>
-      <span> Web Developer </span>
+      <h1 style="text-align: center;">ชนินทร เฉลิมสุข</h1>
+      <span class="wow"> Web Developer </span>
     </div>
     <hr />
     <div>
-      <p>
+      <p class="wow">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa totam
         officia impedit facilis aliquam accusantium modi quaerat laborum
         delectus! Est inventore alias doloribus quasi laudantium corrupti
@@ -31,8 +40,19 @@
       </p>
     </div>
     <hr />
-    <button>
+    <button onclick="showWelcome()">
         CLICK ME
     </button>
+    <hr />
+    <button onclick="showByeBye()">
+        CLICK YOU
+    </button>
+
+    <script>
+        function showWelcome(){
+            alert('Welcome to DTI-SAU')
+        }
+    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
